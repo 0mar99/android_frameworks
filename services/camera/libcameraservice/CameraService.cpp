@@ -135,6 +135,7 @@ namespace flags = com::android::internal::camera::flags;
 // Use "adb shell dumpsys media.camera -v 1" to change it.
 volatile int32_t gLogLevel = 0;
 
+volatile bool MotoCamera = false;
 #define LOG1(...) ALOGD_IF(gLogLevel >= 1, __VA_ARGS__);
 #define LOG2(...) ALOGD_IF(gLogLevel >= 2, __VA_ARGS__);
 
